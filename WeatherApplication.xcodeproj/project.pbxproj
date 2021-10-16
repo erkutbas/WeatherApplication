@@ -7,16 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A700D8EF271AFDB60055178A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A700D8EE271AFDB60055178A /* FirebaseAnalytics */; };
+		A700D8F1271AFDB60055178A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A700D8F0271AFDB60055178A /* FirebaseAuth */; };
 		A767B16A271AB45D00FE2985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767B169271AB45D00FE2985 /* AppDelegate.swift */; };
-		A767B16C271AB45D00FE2985 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767B16B271AB45D00FE2985 /* SceneDelegate.swift */; };
-		A767B16E271AB45D00FE2985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767B16D271AB45D00FE2985 /* ViewController.swift */; };
-		A767B171271AB45D00FE2985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A767B16F271AB45D00FE2985 /* Main.storyboard */; };
 		A767B174271AB45D00FE2985 /* WeatherApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A767B172271AB45D00FE2985 /* WeatherApplication.xcdatamodeld */; };
 		A767B176271AB45E00FE2985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A767B175271AB45E00FE2985 /* Assets.xcassets */; };
 		A767B179271AB45E00FE2985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A767B177271AB45E00FE2985 /* LaunchScreen.storyboard */; };
 		A767B184271AB45E00FE2985 /* WeatherApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767B183271AB45E00FE2985 /* WeatherApplicationTests.swift */; };
 		A767B18E271AB45E00FE2985 /* WeatherApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767B18D271AB45E00FE2985 /* WeatherApplicationUITests.swift */; };
 		A767B190271AB45E00FE2985 /* WeatherApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767B18F271AB45E00FE2985 /* WeatherApplicationUITestsLaunchTests.swift */; };
+		A767B19E271AB68B00FE2985 /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A767B19D271AB68B00FE2985 /* DefaultNetworkOperationPackage */; };
+		A7D2D1B2271ACB2F0020A129 /* EndpointHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B1271ACB2F0020A129 /* EndpointHelper.swift */; };
+		A7D2D1C7271AD0360020A129 /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B6271AD0360020A129 /* GenericValueProtocol.swift */; };
+		A7D2D1C8271AD0360020A129 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B7271AD0360020A129 /* BaseViewController.swift */; };
+		A7D2D1C9271AD0360020A129 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B8271AD0360020A129 /* BaseTableViewCell.swift */; };
+		A7D2D1CA271AD0360020A129 /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B9271AD0360020A129 /* GenericDataProtocol.swift */; };
+		A7D2D1CB271AD0360020A129 /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1BA271AD0360020A129 /* GenericBaseView.swift */; };
+		A7D2D1CC271AD0360020A129 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1BB271AD0360020A129 /* BaseView.swift */; };
+		A7D2D1CD271AD0360020A129 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1BE271AD0360020A129 /* UIApplication+Extension.swift */; };
+		A7D2D1CE271AD0360020A129 /* TabBarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1C0271AD0360020A129 /* TabBarImages.swift */; };
+		A7D2D1CF271AD0360020A129 /* PageViewImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1C1271AD0360020A129 /* PageViewImages.swift */; };
+		A7D2D1D1271AD0360020A129 /* TutorialViewInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1C5271AD0360020A129 /* TutorialViewInfoStore.swift */; };
+		A7D2D1D2271AD0360020A129 /* UserDefaultsWrapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1C6271AD0360020A129 /* UserDefaultsWrapperHelper.swift */; };
+		A7D2D1D4271AD68D0020A129 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1D3271AD68D0020A129 /* GoogleService-Info.plist */; };
+		A7D2D1DE271AE64B0020A129 /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1DD271AE64B0020A129 /* MainViewBuilder.swift */; };
+		A7D2D1E0271AE6520020A129 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1DF271AE6520020A129 /* MainViewController.swift */; };
+		A7D2D1E2271AE6580020A129 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1E1271AE6580020A129 /* MainViewModel.swift */; };
+		A7D2D1E4271AE6A40020A129 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1E3271AE6A40020A129 /* SplashViewModel.swift */; };
+		A7D2D1E6271AE6B20020A129 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1E5271AE6B20020A129 /* SplashViewController.swift */; };
+		A7D2D1E8271AE6D10020A129 /* SplashViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1E7271AE6D10020A129 /* SplashViewBuilder.swift */; };
+		A7D2D1F7271AEC440020A129 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1EA271AEC440020A129 /* Roboto-Medium.ttf */; };
+		A7D2D1F8271AEC440020A129 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1EB271AEC440020A129 /* Roboto-Light.ttf */; };
+		A7D2D1F9271AEC440020A129 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1EC271AEC440020A129 /* Roboto-Regular.ttf */; };
+		A7D2D1FA271AEC440020A129 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1ED271AEC440020A129 /* Roboto-MediumItalic.ttf */; };
+		A7D2D1FB271AEC440020A129 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1EE271AEC440020A129 /* Roboto-ThinItalic.ttf */; };
+		A7D2D1FC271AEC440020A129 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1EF271AEC440020A129 /* Roboto-BoldItalic.ttf */; };
+		A7D2D1FD271AEC440020A129 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F0271AEC440020A129 /* Roboto-LightItalic.ttf */; };
+		A7D2D1FE271AEC440020A129 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F1271AEC440020A129 /* Roboto-Italic.ttf */; };
+		A7D2D1FF271AEC440020A129 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F2271AEC440020A129 /* LICENSE.txt */; };
+		A7D2D200271AEC440020A129 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F3271AEC440020A129 /* Roboto-BlackItalic.ttf */; };
+		A7D2D201271AEC440020A129 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F4271AEC440020A129 /* Roboto-Bold.ttf */; };
+		A7D2D202271AEC440020A129 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F5271AEC440020A129 /* Roboto-Thin.ttf */; };
+		A7D2D203271AEC440020A129 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7D2D1F6271AEC440020A129 /* Roboto-Black.ttf */; };
+		A7D2D206271AED1F0020A129 /* MainFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D205271AED1F0020A129 /* MainFont.swift */; };
+		A7D2D20A271AF3070020A129 /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D208271AF3060020A129 /* MainTabBarBuilder.swift */; };
+		A7D2D20B271AF3070020A129 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D209271AF3060020A129 /* MainTabBarController.swift */; };
+		A7D2D210271AF31D0020A129 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D20D271AF31D0020A129 /* FavoriteViewController.swift */; };
+		A7D2D211271AF31D0020A129 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D20E271AF31D0020A129 /* FavoriteViewModel.swift */; };
+		A7D2D212271AF31D0020A129 /* FavoriteViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D20F271AF31D0020A129 /* FavoriteViewBuilder.swift */; };
+		A7D2D216271AF45C0020A129 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D215271AF45C0020A129 /* AuthenticationManager.swift */; };
+		A7D2D218271AF5910020A129 /* AuthenticationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D217271AF5910020A129 /* AuthenticationManagerProtocol.swift */; };
+		A7D2D21B271AF6F30020A129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D21A271AF6F30020A129 /* LoginViewController.swift */; };
+		A7D2D21D271AF6F90020A129 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D21C271AF6F90020A129 /* LoginViewModel.swift */; };
+		A7D2D21F271AF6FF0020A129 /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D21E271AF6FF0020A129 /* LoginViewBuilder.swift */; };
+		A7D2D221271AF8BA0020A129 /* SimpleAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D220271AF8BA0020A129 /* SimpleAuthenticationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +83,6 @@
 /* Begin PBXFileReference section */
 		A767B166271AB45D00FE2985 /* WeatherApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A767B169271AB45D00FE2985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A767B16B271AB45D00FE2985 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A767B16D271AB45D00FE2985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A767B170271AB45D00FE2985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A767B173271AB45D00FE2985 /* WeatherApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherApplication.xcdatamodel; sourceTree = "<group>"; };
 		A767B175271AB45E00FE2985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A767B178271AB45E00FE2985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +92,50 @@
 		A767B189271AB45E00FE2985 /* WeatherApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A767B18D271AB45E00FE2985 /* WeatherApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApplicationUITests.swift; sourceTree = "<group>"; };
 		A767B18F271AB45E00FE2985 /* WeatherApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7D2D1B1271ACB2F0020A129 /* EndpointHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointHelper.swift; sourceTree = "<group>"; };
+		A7D2D1B6271AD0360020A129 /* GenericValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
+		A7D2D1B7271AD0360020A129 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A7D2D1B8271AD0360020A129 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		A7D2D1B9271AD0360020A129 /* GenericDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataProtocol.swift; sourceTree = "<group>"; };
+		A7D2D1BA271AD0360020A129 /* GenericBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		A7D2D1BB271AD0360020A129 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A7D2D1BE271AD0360020A129 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		A7D2D1C0271AD0360020A129 /* TabBarImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarImages.swift; sourceTree = "<group>"; };
+		A7D2D1C1271AD0360020A129 /* PageViewImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewImages.swift; sourceTree = "<group>"; };
+		A7D2D1C5271AD0360020A129 /* TutorialViewInfoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewInfoStore.swift; sourceTree = "<group>"; };
+		A7D2D1C6271AD0360020A129 /* UserDefaultsWrapperHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapperHelper.swift; sourceTree = "<group>"; };
+		A7D2D1D3271AD68D0020A129 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7D2D1DD271AE64B0020A129 /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		A7D2D1DF271AE6520020A129 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A7D2D1E1271AE6580020A129 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A7D2D1E3271AE6A40020A129 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		A7D2D1E5271AE6B20020A129 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A7D2D1E7271AE6D10020A129 /* SplashViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewBuilder.swift; sourceTree = "<group>"; };
+		A7D2D1EA271AEC440020A129 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A7D2D1EB271AEC440020A129 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A7D2D1EC271AEC440020A129 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A7D2D1ED271AEC440020A129 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A7D2D1EE271AEC440020A129 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A7D2D1EF271AEC440020A129 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A7D2D1F0271AEC440020A129 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		A7D2D1F1271AEC440020A129 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A7D2D1F2271AEC440020A129 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A7D2D1F3271AEC440020A129 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A7D2D1F4271AEC440020A129 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A7D2D1F5271AEC440020A129 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A7D2D1F6271AEC440020A129 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A7D2D205271AED1F0020A129 /* MainFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFont.swift; sourceTree = "<group>"; };
+		A7D2D208271AF3060020A129 /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
+		A7D2D209271AF3060020A129 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A7D2D20D271AF31D0020A129 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		A7D2D20E271AF31D0020A129 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		A7D2D20F271AF31D0020A129 /* FavoriteViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewBuilder.swift; sourceTree = "<group>"; };
+		A7D2D215271AF45C0020A129 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		A7D2D217271AF5910020A129 /* AuthenticationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerProtocol.swift; sourceTree = "<group>"; };
+		A7D2D21A271AF6F30020A129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7D2D21C271AF6F90020A129 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A7D2D21E271AF6FF0020A129 /* LoginViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBuilder.swift; sourceTree = "<group>"; };
+		A7D2D220271AF8BA0020A129 /* SimpleAuthenticationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthenticationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +143,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A700D8EF271AFDB60055178A /* FirebaseAnalytics in Frameworks */,
+				A700D8F1271AFDB60055178A /* FirebaseAuth in Frameworks */,
+				A767B19E271AB68B00FE2985 /* DefaultNetworkOperationPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +189,14 @@
 		A767B168271AB45D00FE2985 /* WeatherApplication */ = {
 			isa = PBXGroup;
 			children = (
+				A7D2D213271AF44A0020A129 /* Managers */,
+				A7D2D1DA271AE6320020A129 /* SceneModules */,
+				A7D2D1B5271AD0360020A129 /* BaseComponents */,
+				A7D2D1BC271AD0360020A129 /* Utilities */,
+				A7D2D1B0271ACB1B0020A129 /* NetworkModules */,
 				A767B169271AB45D00FE2985 /* AppDelegate.swift */,
-				A767B16B271AB45D00FE2985 /* SceneDelegate.swift */,
-				A767B16D271AB45D00FE2985 /* ViewController.swift */,
-				A767B16F271AB45D00FE2985 /* Main.storyboard */,
 				A767B175271AB45E00FE2985 /* Assets.xcassets */,
+				A7D2D1D3271AD68D0020A129 /* GoogleService-Info.plist */,
 				A767B177271AB45E00FE2985 /* LaunchScreen.storyboard */,
 				A767B17A271AB45E00FE2985 /* Info.plist */,
 				A767B172271AB45D00FE2985 /* WeatherApplication.xcdatamodeld */,
@@ -130,6 +221,180 @@
 			path = WeatherApplicationUITests;
 			sourceTree = "<group>";
 		};
+		A7D2D1B0271ACB1B0020A129 /* NetworkModules */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1B1271ACB2F0020A129 /* EndpointHelper.swift */,
+			);
+			path = NetworkModules;
+			sourceTree = "<group>";
+		};
+		A7D2D1B5271AD0360020A129 /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1B6271AD0360020A129 /* GenericValueProtocol.swift */,
+				A7D2D1B7271AD0360020A129 /* BaseViewController.swift */,
+				A7D2D1B8271AD0360020A129 /* BaseTableViewCell.swift */,
+				A7D2D1B9271AD0360020A129 /* GenericDataProtocol.swift */,
+				A7D2D1BA271AD0360020A129 /* GenericBaseView.swift */,
+				A7D2D1BB271AD0360020A129 /* BaseView.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		A7D2D1BC271AD0360020A129 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1BD271AD0360020A129 /* Extensions */,
+				A7D2D1BF271AD0360020A129 /* AssetHelpers */,
+				A7D2D1C2271AD0360020A129 /* FontManagers */,
+				A7D2D1C4271AD0360020A129 /* UserDefaultsHelpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A7D2D1BD271AD0360020A129 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1BE271AD0360020A129 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7D2D1BF271AD0360020A129 /* AssetHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1C0271AD0360020A129 /* TabBarImages.swift */,
+				A7D2D1C1271AD0360020A129 /* PageViewImages.swift */,
+			);
+			path = AssetHelpers;
+			sourceTree = "<group>";
+		};
+		A7D2D1C2271AD0360020A129 /* FontManagers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D204271AED160020A129 /* Helpers */,
+				A7D2D1E9271AEC440020A129 /* Roboto */,
+			);
+			path = FontManagers;
+			sourceTree = "<group>";
+		};
+		A7D2D1C4271AD0360020A129 /* UserDefaultsHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1C5271AD0360020A129 /* TutorialViewInfoStore.swift */,
+				A7D2D1C6271AD0360020A129 /* UserDefaultsWrapperHelper.swift */,
+			);
+			path = UserDefaultsHelpers;
+			sourceTree = "<group>";
+		};
+		A7D2D1DA271AE6320020A129 /* SceneModules */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D219271AF6E60020A129 /* Login */,
+				A7D2D20C271AF31D0020A129 /* Favorites */,
+				A7D2D207271AF3060020A129 /* MainTabBar */,
+				A7D2D1DC271AE6410020A129 /* Main */,
+				A7D2D1DB271AE63B0020A129 /* Splash */,
+			);
+			path = SceneModules;
+			sourceTree = "<group>";
+		};
+		A7D2D1DB271AE63B0020A129 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1E3271AE6A40020A129 /* SplashViewModel.swift */,
+				A7D2D1E5271AE6B20020A129 /* SplashViewController.swift */,
+				A7D2D1E7271AE6D10020A129 /* SplashViewBuilder.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A7D2D1DC271AE6410020A129 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1DD271AE64B0020A129 /* MainViewBuilder.swift */,
+				A7D2D1DF271AE6520020A129 /* MainViewController.swift */,
+				A7D2D1E1271AE6580020A129 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A7D2D1E9271AEC440020A129 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D1EA271AEC440020A129 /* Roboto-Medium.ttf */,
+				A7D2D1EB271AEC440020A129 /* Roboto-Light.ttf */,
+				A7D2D1EC271AEC440020A129 /* Roboto-Regular.ttf */,
+				A7D2D1ED271AEC440020A129 /* Roboto-MediumItalic.ttf */,
+				A7D2D1EE271AEC440020A129 /* Roboto-ThinItalic.ttf */,
+				A7D2D1EF271AEC440020A129 /* Roboto-BoldItalic.ttf */,
+				A7D2D1F0271AEC440020A129 /* Roboto-LightItalic.ttf */,
+				A7D2D1F1271AEC440020A129 /* Roboto-Italic.ttf */,
+				A7D2D1F2271AEC440020A129 /* LICENSE.txt */,
+				A7D2D1F3271AEC440020A129 /* Roboto-BlackItalic.ttf */,
+				A7D2D1F4271AEC440020A129 /* Roboto-Bold.ttf */,
+				A7D2D1F5271AEC440020A129 /* Roboto-Thin.ttf */,
+				A7D2D1F6271AEC440020A129 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		A7D2D204271AED160020A129 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D205271AED1F0020A129 /* MainFont.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A7D2D207271AF3060020A129 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D208271AF3060020A129 /* MainTabBarBuilder.swift */,
+				A7D2D209271AF3060020A129 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		A7D2D20C271AF31D0020A129 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D20D271AF31D0020A129 /* FavoriteViewController.swift */,
+				A7D2D20E271AF31D0020A129 /* FavoriteViewModel.swift */,
+				A7D2D20F271AF31D0020A129 /* FavoriteViewBuilder.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		A7D2D213271AF44A0020A129 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D214271AF4540020A129 /* AuthenticationManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A7D2D214271AF4540020A129 /* AuthenticationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D215271AF45C0020A129 /* AuthenticationManager.swift */,
+				A7D2D217271AF5910020A129 /* AuthenticationManagerProtocol.swift */,
+				A7D2D220271AF8BA0020A129 /* SimpleAuthenticationRequest.swift */,
+			);
+			path = AuthenticationManager;
+			sourceTree = "<group>";
+		};
+		A7D2D219271AF6E60020A129 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2D21A271AF6F30020A129 /* LoginViewController.swift */,
+				A7D2D21C271AF6F90020A129 /* LoginViewModel.swift */,
+				A7D2D21E271AF6FF0020A129 /* LoginViewBuilder.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +411,11 @@
 			dependencies = (
 			);
 			name = WeatherApplication;
+			packageProductDependencies = (
+				A767B19D271AB68B00FE2985 /* DefaultNetworkOperationPackage */,
+				A700D8EE271AFDB60055178A /* FirebaseAnalytics */,
+				A700D8F0271AFDB60055178A /* FirebaseAuth */,
+			);
 			productName = WeatherApplication;
 			productReference = A767B166271AB45D00FE2985 /* WeatherApplication.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +488,10 @@
 				Base,
 			);
 			mainGroup = A767B15D271AB45D00FE2985;
+			packageReferences = (
+				A767B19C271AB68B00FE2985 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+				A700D8ED271AFDB60055178A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A767B167271AB45D00FE2985 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,9 +508,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D2D201271AEC440020A129 /* Roboto-Bold.ttf in Resources */,
+				A7D2D1FF271AEC440020A129 /* LICENSE.txt in Resources */,
+				A7D2D1FC271AEC440020A129 /* Roboto-BoldItalic.ttf in Resources */,
+				A7D2D1F9271AEC440020A129 /* Roboto-Regular.ttf in Resources */,
+				A7D2D1FD271AEC440020A129 /* Roboto-LightItalic.ttf in Resources */,
+				A7D2D1F7271AEC440020A129 /* Roboto-Medium.ttf in Resources */,
 				A767B179271AB45E00FE2985 /* LaunchScreen.storyboard in Resources */,
+				A7D2D200271AEC440020A129 /* Roboto-BlackItalic.ttf in Resources */,
+				A7D2D202271AEC440020A129 /* Roboto-Thin.ttf in Resources */,
+				A7D2D1F8271AEC440020A129 /* Roboto-Light.ttf in Resources */,
+				A7D2D1FB271AEC440020A129 /* Roboto-ThinItalic.ttf in Resources */,
+				A7D2D203271AEC440020A129 /* Roboto-Black.ttf in Resources */,
+				A7D2D1FA271AEC440020A129 /* Roboto-MediumItalic.ttf in Resources */,
+				A7D2D1D4271AD68D0020A129 /* GoogleService-Info.plist in Resources */,
+				A7D2D1FE271AEC440020A129 /* Roboto-Italic.ttf in Resources */,
 				A767B176271AB45E00FE2985 /* Assets.xcassets in Resources */,
-				A767B171271AB45D00FE2985 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +548,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A767B16E271AB45D00FE2985 /* ViewController.swift in Sources */,
+				A7D2D1CA271AD0360020A129 /* GenericDataProtocol.swift in Sources */,
+				A7D2D1CF271AD0360020A129 /* PageViewImages.swift in Sources */,
+				A7D2D1E4271AE6A40020A129 /* SplashViewModel.swift in Sources */,
+				A7D2D1CC271AD0360020A129 /* BaseView.swift in Sources */,
 				A767B16A271AB45D00FE2985 /* AppDelegate.swift in Sources */,
-				A767B16C271AB45D00FE2985 /* SceneDelegate.swift in Sources */,
+				A7D2D21B271AF6F30020A129 /* LoginViewController.swift in Sources */,
+				A7D2D21F271AF6FF0020A129 /* LoginViewBuilder.swift in Sources */,
+				A7D2D1E8271AE6D10020A129 /* SplashViewBuilder.swift in Sources */,
+				A7D2D20B271AF3070020A129 /* MainTabBarController.swift in Sources */,
+				A7D2D21D271AF6F90020A129 /* LoginViewModel.swift in Sources */,
+				A7D2D20A271AF3070020A129 /* MainTabBarBuilder.swift in Sources */,
+				A7D2D212271AF31D0020A129 /* FavoriteViewBuilder.swift in Sources */,
+				A7D2D211271AF31D0020A129 /* FavoriteViewModel.swift in Sources */,
+				A7D2D221271AF8BA0020A129 /* SimpleAuthenticationRequest.swift in Sources */,
+				A7D2D1E0271AE6520020A129 /* MainViewController.swift in Sources */,
+				A7D2D1CE271AD0360020A129 /* TabBarImages.swift in Sources */,
+				A7D2D216271AF45C0020A129 /* AuthenticationManager.swift in Sources */,
+				A7D2D1D2271AD0360020A129 /* UserDefaultsWrapperHelper.swift in Sources */,
+				A7D2D1CB271AD0360020A129 /* GenericBaseView.swift in Sources */,
+				A7D2D206271AED1F0020A129 /* MainFont.swift in Sources */,
+				A7D2D1C9271AD0360020A129 /* BaseTableViewCell.swift in Sources */,
 				A767B174271AB45D00FE2985 /* WeatherApplication.xcdatamodeld in Sources */,
+				A7D2D1DE271AE64B0020A129 /* MainViewBuilder.swift in Sources */,
+				A7D2D218271AF5910020A129 /* AuthenticationManagerProtocol.swift in Sources */,
+				A7D2D1C8271AD0360020A129 /* BaseViewController.swift in Sources */,
+				A7D2D1D1271AD0360020A129 /* TutorialViewInfoStore.swift in Sources */,
+				A7D2D1E2271AE6580020A129 /* MainViewModel.swift in Sources */,
+				A7D2D1B2271ACB2F0020A129 /* EndpointHelper.swift in Sources */,
+				A7D2D1C7271AD0360020A129 /* GenericValueProtocol.swift in Sources */,
+				A7D2D1CD271AD0360020A129 /* UIApplication+Extension.swift in Sources */,
+				A7D2D210271AF31D0020A129 /* FavoriteViewController.swift in Sources */,
+				A7D2D1E6271AE6B20020A129 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +616,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A767B16F271AB45D00FE2985 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A767B170271AB45D00FE2985 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A767B177271AB45E00FE2985 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +753,9 @@
 				DEVELOPMENT_TEAM = ZVL2SV8VV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Weather Application";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,9 +781,9 @@
 				DEVELOPMENT_TEAM = ZVL2SV8VV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Weather Application";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,6 +935,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A700D8ED271AFDB60055178A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		A767B19C271AB68B00FE2985 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/erkutbas/DefaultNetworkOperationPackage.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A700D8EE271AFDB60055178A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A700D8ED271AFDB60055178A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A700D8F0271AFDB60055178A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A700D8ED271AFDB60055178A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A767B19D271AB68B00FE2985 /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A767B19C271AB68B00FE2985 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A767B172271AB45D00FE2985 /* WeatherApplication.xcdatamodeld */ = {
