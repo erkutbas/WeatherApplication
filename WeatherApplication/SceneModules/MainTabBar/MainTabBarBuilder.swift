@@ -12,10 +12,10 @@ class MainTabBarBuilder {
     class func build() -> UIViewController {
         
         let mainViewController = MainViewBuilder.build()
-        let favoriteViewController = FavoriteViewBuilder.build()
+        let AccountViewController = AccountViewBuilder.build()
 
         let tabViewController = MainTabBarController()
-        tabViewController.viewControllers = [mainViewController, favoriteViewController]
+        tabViewController.viewControllers = [mainViewController, AccountViewController]
         tabViewController.tabBar.tintColor = .black
         tabViewController.tabBar.backgroundColor = .systemBackground
         

@@ -51,7 +51,7 @@ class MainViewController: BaseViewController<MainViewModel> {
     
     private func userLoginStateHandler(with value: Bool) {
         guard !value else { return }
-        present(LoginViewBuilder.build(), animated: true, completion: nil)
+        //present(LoginViewBuilder.build(), animated: true, completion: nil)
     }
     
     @objc func testButtonAction(_ sender: UIButton) {

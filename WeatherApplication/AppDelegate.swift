@@ -36,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.fireMainView()
             }
         }
-        
     }
     
     private func fireMainView() {

@@ -24,4 +24,16 @@ class AuthenticationManager: AuthenticationManagerProtocol {
 
     }
     
+    func logout() {
+        
+    }
+    
+    func register()  {
+        
+    }
+    
+    func xxx()  {
+        
+    }
+    
 }
