@@ -13,4 +13,8 @@ protocol AuthenticationManagerProtocol {
     
     func isLoggedIn(with completion: @escaping BooleanBlock)
     
+    func signIn(with request: SimpleAuthenticationRequest)
+    
+    func logout()
+        
 }

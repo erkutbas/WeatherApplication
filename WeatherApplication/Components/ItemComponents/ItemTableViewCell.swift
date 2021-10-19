@@ -69,9 +69,9 @@ class ItemTableViewCell: BaseTableViewCell {
             
             mainStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10),
             
-            mainStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10),
+            mainStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 30),
             
-            mainStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10),
+            mainStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -30),
             
         ])
         

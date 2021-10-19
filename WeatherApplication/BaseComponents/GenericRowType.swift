@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum GenericRowType {
+public enum GenericRowType {
     case settings
     case help
     case frequentlyAskedQuestions
