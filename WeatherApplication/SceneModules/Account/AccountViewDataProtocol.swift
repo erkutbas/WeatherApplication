@@ -9,7 +9,7 @@ import Foundation
 
 protocol AccountViewDataProtocol {
     
-    func getAccountViewComponentData() -> [GenericDataProtocol]
+    func getAccountViewComponentData(by loggedIn: Bool) -> [GenericDataProtocol]
     
     func getHeaderViewData(with completion: @escaping VoidCompletionBlock) -> HeaderViewData
     

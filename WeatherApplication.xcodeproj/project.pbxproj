@@ -49,6 +49,7 @@
 		A7ADEB89271F38A000C0D726 /* TextFieldViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADEB88271F38A000C0D726 /* TextFieldViewData.swift */; };
 		A7ADEB8C271F3AE800C0D726 /* LoginAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADEB8B271F3AE800C0D726 /* LoginAuthenticationView.swift */; };
 		A7ADEB8E271F3AED00C0D726 /* LoginAuthenticationViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADEB8D271F3AED00C0D726 /* LoginAuthenticationViewData.swift */; };
+		A7BB53E32721E3F200DA840A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB53E22721E3F200DA840A /* BaseViewModel.swift */; };
 		A7D2D1B2271ACB2F0020A129 /* EndpointHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B1271ACB2F0020A129 /* EndpointHelper.swift */; };
 		A7D2D1C7271AD0360020A129 /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B6271AD0360020A129 /* GenericValueProtocol.swift */; };
 		A7D2D1C8271AD0360020A129 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D1B7271AD0360020A129 /* BaseViewController.swift */; };
@@ -156,6 +157,7 @@
 		A7ADEB88271F38A000C0D726 /* TextFieldViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewData.swift; sourceTree = "<group>"; };
 		A7ADEB8B271F3AE800C0D726 /* LoginAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticationView.swift; sourceTree = "<group>"; };
 		A7ADEB8D271F3AED00C0D726 /* LoginAuthenticationViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticationViewData.swift; sourceTree = "<group>"; };
+		A7BB53E22721E3F200DA840A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		A7D2D1B1271ACB2F0020A129 /* EndpointHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointHelper.swift; sourceTree = "<group>"; };
 		A7D2D1B6271AD0360020A129 /* GenericValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
 		A7D2D1B7271AD0360020A129 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 				A7D2D1BA271AD0360020A129 /* GenericBaseView.swift */,
 				A7D2D1BB271AD0360020A129 /* BaseView.swift */,
 				A74A7D68271C1F6600947CC2 /* GenericRowType.swift */,
+				A7BB53E22721E3F200DA840A /* BaseViewModel.swift */,
 			);
 			path = BaseComponents;
 			sourceTree = "<group>";
@@ -802,6 +805,7 @@
 				A767B174271AB45D00FE2985 /* WeatherApplication.xcdatamodeld in Sources */,
 				A7D2D1DE271AE64B0020A129 /* MainViewBuilder.swift in Sources */,
 				A74A7D56271C087800947CC2 /* PageViewComponentData.swift in Sources */,
+				A7BB53E32721E3F200DA840A /* BaseViewModel.swift in Sources */,
 				A7D2D218271AF5910020A129 /* AuthenticationManagerProtocol.swift in Sources */,
 				A74A7D55271C087800947CC2 /* PageViewComponent.swift in Sources */,
 				A7D2D1C8271AD0360020A129 /* BaseViewController.swift in Sources */,

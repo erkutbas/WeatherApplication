@@ -12,23 +12,17 @@ typealias AccountViewState = (ViewState) -> Void
 class AccountViewModel {
     
     private let formatter: AccountViewDataProtocol
+    private let authenticationManager: AuthenticationManagerProtocol
     
     private var state: AccountViewState?
     private var loginActionBlock: VoidBlock?
     private var data = [GenericDataProtocol]()
     
-    init(formatter: AccountViewDataProtocol) {
+    init(formatter: AccountViewDataProtocol,
+         authenticationManager: AuthenticationManagerProtocol) {
         self.formatter = formatter
-    }
-    
-    func getViewComponentData() {
-        state?(.loading)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-            guard let self = self else { return }
-            self.data = self.formatter.getAccountViewComponentData()
-            self.state?(.done)
-        }
-        
+        self.authenticationManager = authenticationManager
+        subscribeAuthenticationManager()
     }
     
     func subscribeViewState(with completion: @escaping AccountViewState) {
@@ -43,9 +37,39 @@ class AccountViewModel {
         return ItemListViewData(headerViewData: formatter.getHeaderViewData(with: loginActionButtonListener))
     }
     
+    // MARK: - Private Methods
+    private func subscribeAuthenticationManager() {
+        authenticationManager.isLoggedIn(with: isLoggedInListener)
+        
+        AuthenticationManager.shared.toko { zozo in
+            print("zozo1 : \(zozo)")
+        }
+    }
+    
+    private func loggedInListenerHandler(with value: Bool) {
+        state?(.loading)
+        data = formatter.getAccountViewComponentData(by: value)
+        state?(.done)
+    }
+    
+    private func selectedItemHandler(at index: Int) {
+        switch data[index].type {
+        case .logout:
+            authenticationManager.logout()
+        default:
+            break
+        }
+    }
+    
+    // MARK: - Listener Handlers
     private lazy var loginActionButtonListener: VoidBlock = { [weak self] in
         print("button tapped")
         self?.loginActionBlock?()
+    }
+    
+    private lazy var isLoggedInListener: BooleanBlock = { [weak self] value in
+        print("test : \(value)")
+        self?.loggedInListenerHandler(with: value)
     }
     
 }
@@ -62,6 +86,10 @@ extension AccountViewModel: ItemListProtocol {
     
     func askNumberOfSection() -> Int {
         return 1
+    }
+    
+    func selectedItem(at index: Int) {
+        selectedItemHandler(at: index)
     }
     
 }

@@ -17,7 +17,7 @@ class LoginAuthenticationView: GenericBaseView<LoginAuthenticationViewData> {
     }()
     
     private lazy var mainStackView: UIStackView = {
-        let temp = UIStackView(arrangedSubviews: [emailLoginView, infoTitle, loginButton, signOutButton])
+        let temp = UIStackView(arrangedSubviews: [emailLoginView, infoTitle, loginButton])
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.alignment = .fill
         temp.distribution = .fill

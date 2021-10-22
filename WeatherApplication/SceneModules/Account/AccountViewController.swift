@@ -17,7 +17,6 @@ class AccountViewController: BaseViewController<AccountViewModel> {
         
         appendMainComponent()
         subscribeViewModelPublishers()
-        viewModel.getViewComponentData()
     }
     
     private func appendMainComponent() {

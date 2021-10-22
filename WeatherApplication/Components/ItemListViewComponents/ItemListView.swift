@@ -93,5 +93,10 @@ extension ItemListView: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.selectedItem(at: indexPath.row)
+    }
+    
 }
 

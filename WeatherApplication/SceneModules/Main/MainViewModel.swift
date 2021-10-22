@@ -19,11 +19,15 @@ class MainViewModel {
     }
     
     private func listenUserState() {
-        authenticationManager.isLoggedIn { [weak self] state in
-            print("USER STATE : \(state)")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self?.loginStateListener?(state)
-            }
+//        authenticationManager.isLoggedIn { [weak self] state in
+//            print("USER STATE : \(state)")
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                self?.loginStateListener?(state)
+//            }
+//        }
+        
+        AuthenticationManager.shared.toko { zozo in
+            print("zozo2 : \(zozo)")
         }
     }
     

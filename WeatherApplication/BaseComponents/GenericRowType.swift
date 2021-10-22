@@ -11,4 +11,5 @@ public enum GenericRowType {
     case settings
     case help
     case frequentlyAskedQuestions
+    case logout
 }
