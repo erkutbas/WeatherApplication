@@ -13,11 +13,11 @@ typealias Paths = EndpointHelper.Paths
 enum EndpointHelper {
 
     enum BaseUrls: String {
-        case dev = "https://picsum.photos/v2/"
+        case dev = "https://gateway.marvel.com:443/v1/public/"
     }
 
     enum Paths: String {
-        case list = "list"
+        case characters = "characters"
     }
     
 }

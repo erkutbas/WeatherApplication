@@ -11,7 +11,8 @@ class MainViewBuilder {
     
     class func build() -> UIViewController {
         
-        let viewModel = MainViewModel(authenticationManager: AuthenticationManager.shared)
+        let mainViewDataFormatter = MainViewDataFormatter()
+        let viewModel = MainViewModel(authenticationManager: AuthenticationManager.shared, accessProviderManager: AccessProviderManager.shared, dataFormatter: mainViewDataFormatter)
         let viewController = MainViewController(viewModel: viewModel)
         let navigationViewController = UINavigationController(rootViewController: viewController)
         viewController.title = "Main"

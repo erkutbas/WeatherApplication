@@ -13,7 +13,7 @@ class ItemListView: GenericBaseView<ItemListViewData> {
         print("DEINIT ItemListView")
     }
     
-    weak var delegate: ItemListProtocol?
+    weak var delegate: ItemProviderProtocol?
     
     private lazy var tableView: UITableView = {
         let temp = UITableView()

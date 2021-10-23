@@ -75,7 +75,7 @@ class AccountViewModel {
     
 }
 
-extension AccountViewModel: ItemListProtocol {
+extension AccountViewModel: ItemProviderProtocol {
     
     func askData(at index: Int) -> GenericDataProtocol? {
         return data[index]
