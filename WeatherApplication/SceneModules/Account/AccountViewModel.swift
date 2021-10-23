@@ -41,15 +41,16 @@ class AccountViewModel {
     private func subscribeAuthenticationManager() {
         authenticationManager.isLoggedIn(with: isLoggedInListener)
         
-        AuthenticationManager.shared.toko { zozo in
-            print("zozo1 : \(zozo)")
-        }
+//        AuthenticationManager.shared.toko { zozo in
+//            print("zozo1 : \(zozo)")
+//        }
     }
     
     private func loggedInListenerHandler(with value: Bool) {
         state?(.loading)
         data = formatter.getAccountViewComponentData(by: value)
         state?(.done)
+        
     }
     
     private func selectedItemHandler(at index: Int) {
