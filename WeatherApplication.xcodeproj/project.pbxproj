@@ -61,6 +61,8 @@
 		A7A5F6D82724127D00251EE4 /* MainViewDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5F6D72724127D00251EE4 /* MainViewDataFormatter.swift */; };
 		A7A5F6DB2724222E00251EE4 /* LoadingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5F6DA2724222E00251EE4 /* LoadingCellView.swift */; };
 		A7A5F6DD2724259800251EE4 /* PaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5F6DC2724259800251EE4 /* PaginationInfo.swift */; };
+		A7A5F6E0272432C900251EE4 /* EmptyBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5F6DF272432C900251EE4 /* EmptyBackgroundView.swift */; };
+		A7A5F6E2272432CE00251EE4 /* EmptyBackgroundViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5F6E1272432CD00251EE4 /* EmptyBackgroundViewData.swift */; };
 		A7ADEB82271F373800C0D726 /* EmailLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADEB81271F373800C0D726 /* EmailLoginView.swift */; };
 		A7ADEB84271F373E00C0D726 /* EmailLoginViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADEB83271F373E00C0D726 /* EmailLoginViewData.swift */; };
 		A7ADEB87271F388200C0D726 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ADEB86271F388200C0D726 /* TextFieldView.swift */; };
@@ -189,6 +191,8 @@
 		A7A5F6D72724127D00251EE4 /* MainViewDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewDataFormatter.swift; sourceTree = "<group>"; };
 		A7A5F6DA2724222E00251EE4 /* LoadingCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCellView.swift; sourceTree = "<group>"; };
 		A7A5F6DC2724259800251EE4 /* PaginationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationInfo.swift; sourceTree = "<group>"; };
+		A7A5F6DF272432C900251EE4 /* EmptyBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBackgroundView.swift; sourceTree = "<group>"; };
+		A7A5F6E1272432CD00251EE4 /* EmptyBackgroundViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBackgroundViewData.swift; sourceTree = "<group>"; };
 		A7ADEB81271F373800C0D726 /* EmailLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginView.swift; sourceTree = "<group>"; };
 		A7ADEB83271F373E00C0D726 /* EmailLoginViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewData.swift; sourceTree = "<group>"; };
 		A7ADEB86271F388200C0D726 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
@@ -275,6 +279,7 @@
 		A74A7D34271C087800947CC2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A7A5F6DE272432B200251EE4 /* EmptyBackgroundComponent */,
 				A7A5F6C427240E2300251EE4 /* CustomImageViewComponent */,
 				A7A5F6BF27240DCC00251EE4 /* CharacterViewCompoents */,
 				A7DC30D92723F1DE00C441F9 /* ItemCollectionComponents */,
@@ -510,6 +515,15 @@
 				A7A5F6DA2724222E00251EE4 /* LoadingCellView.swift */,
 			);
 			path = CellLoadingComponent;
+			sourceTree = "<group>";
+		};
+		A7A5F6DE272432B200251EE4 /* EmptyBackgroundComponent */ = {
+			isa = PBXGroup;
+			children = (
+				A7A5F6DF272432C900251EE4 /* EmptyBackgroundView.swift */,
+				A7A5F6E1272432CD00251EE4 /* EmptyBackgroundViewData.swift */,
+			);
+			path = EmptyBackgroundComponent;
 			sourceTree = "<group>";
 		};
 		A7ADEB80271F372300C0D726 /* EmailLoginComponent */ = {
@@ -931,6 +945,7 @@
 				A7ADEB87271F388200C0D726 /* TextFieldView.swift in Sources */,
 				A74A7D4D271C087800947CC2 /* LabelDistributionData.swift in Sources */,
 				A7D2D221271AF8BA0020A129 /* SimpleAuthenticationRequest.swift in Sources */,
+				A7A5F6E0272432C900251EE4 /* EmptyBackgroundView.swift in Sources */,
 				A7D2D1E0271AE6520020A129 /* MainViewController.swift in Sources */,
 				A7A5F6CA27240E2300251EE4 /* CustomImageViewComponentData.swift in Sources */,
 				A7D2D1CE271AD0360020A129 /* TabBarImages.swift in Sources */,
@@ -966,6 +981,7 @@
 				A7D2D1D1271AD0360020A129 /* TutorialViewInfoStore.swift in Sources */,
 				A7A5F6D62724126C00251EE4 /* MainViewDataFormatterProtocol.swift in Sources */,
 				A74A7D6D271C209A00947CC2 /* AccountViewDataProtocol.swift in Sources */,
+				A7A5F6E2272432CE00251EE4 /* EmptyBackgroundViewData.swift in Sources */,
 				A7A5F6D42724103D00251EE4 /* BaseCollectionViewCell.swift in Sources */,
 				A7A5F6CF27240EFD00251EE4 /* ImageCacheManager.swift in Sources */,
 				A74A7D5F271C08A700947CC2 /* ActionButtonTheme.swift in Sources */,
