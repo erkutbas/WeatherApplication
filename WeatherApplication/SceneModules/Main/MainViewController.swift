@@ -39,9 +39,6 @@ class MainViewController: BaseViewController<MainViewModel> {
     }
     
     private func addViewModelListeners() {
-        viewModel.subscribeLoginState { [weak self] state in
-            self?.userLoginStateHandler(with: state)
-        }
         viewModel.subscribeViewState { [weak self] state in
             switch state {
             case .loading:
@@ -52,11 +49,23 @@ class MainViewController: BaseViewController<MainViewModel> {
                 break
             }
         }
+        
+        viewModel.subscribeDetailViewState { [weak self] data in
+            self?.fireDetailView(with: data)
+        }
     }
     
-    private func userLoginStateHandler(with value: Bool) {
-        guard !value else { return }
-        //present(LoginViewBuilder.build(), animated: true, completion: nil)
+    private func fireDetailView(with data: ItemDetailViewRequest) {
+        
+        let viewController = ItemDetailViewBuilder.build(with: data)
+        
+        switch data.type {
+        case .push:
+            navigationController?.pushViewController(viewController, animated: true)
+        case .present:
+            present(viewController, animated: true, completion: nil)
+        }
+        
     }
     
 }

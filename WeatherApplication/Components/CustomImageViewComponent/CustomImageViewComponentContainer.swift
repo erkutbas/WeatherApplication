@@ -37,8 +37,10 @@ class CustomImageViewComponentContainer: GenericBaseView<CustomImageViewComponen
     override func loadDataView() {
         super.loadDataView()
         guard let data = returnData() else { return }
+        
         customImageView.setData(componentData: data)
         customImageView.contentMode = data.contentMode
+        
     }
     
     

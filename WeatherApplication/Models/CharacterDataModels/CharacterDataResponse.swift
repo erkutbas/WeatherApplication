@@ -1,5 +1,5 @@
 //
-//  CharacterListResponse.swift
+//  CharacterDataResponse.swift
 //  WeatherApplication
 //
 //  Created by Erkut Bas on 23.10.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CharacterListResponse: Codable {
+class CharacterDataResponse: Codable {
     public let data: CharacterListData
     
     public init(data: CharacterListData) {

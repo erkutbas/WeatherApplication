@@ -18,11 +18,12 @@ class MainViewBuilder {
         viewController.title = "Main"
         viewController.tabBarItem.image = TabBarImages.home.value
         viewController.tabBarItem.selectedImage = TabBarImages.homeSelected.value
-        viewController.navigationController?.setNavigationBarHidden(true, animated: false)
+        viewController.navigationController?.setNavigationBarHidden(false, animated: false)
+//        viewController.navigationController?.navigationBar.prefersLargeTitles = true
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .systemBackground
+        appearance.backgroundColor = AppTheme.smooth.value
         viewController.navigationController?.navigationBar.standardAppearance = appearance;
         viewController.navigationController?.navigationBar.scrollEdgeAppearance = viewController.navigationController?.navigationBar.standardAppearance
         

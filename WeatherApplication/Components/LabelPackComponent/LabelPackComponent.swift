@@ -77,6 +77,8 @@ class LabelPackComponent: GenericBaseView<LabelPackComponentData> {
         titleLabel.text = data.title
         // if everthing is ok move on to do more.
         subTitleActivationManager(with: data.subTitle)
+        setupTitleConfigurations()
+        setupSubTitleConfigurations()
     }
     
     private func subTitleActivationManager(with data: String) {

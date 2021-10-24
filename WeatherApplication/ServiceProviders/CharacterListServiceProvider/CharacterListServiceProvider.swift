@@ -8,12 +8,12 @@
 import Foundation
 import DefaultNetworkOperationPackage
 
-class CharacterListServiceProvider: ApiServiceProvider<CharacterListRequest> {
+class CharacterListServiceProvider: ApiServiceProvider<CharacterDataRequest> {
     
-    init(request: CharacterListRequest) {
+    init(request: CharacterDataRequest) {
         super.init(method: .get,
                    baseUrl: BaseUrl.dev.rawValue,
-                   path: Paths.characters.rawValue,
+                   path: Paths.characters.value,
                    data: request)
     }
     

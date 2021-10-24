@@ -1,5 +1,5 @@
 //
-//  CharacterListRequest.swift
+//  CharacterDataRequest.swift
 //  WeatherApplication
 //
 //  Created by Erkut Bas on 23.10.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CharacterListRequest: Codable {
+class CharacterDataRequest: Codable {
     
     private(set) public var characterId: Int?
     private(set) public var offset: Int = 0

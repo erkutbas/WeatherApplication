@@ -16,8 +16,21 @@ enum EndpointHelper {
         case dev = "https://gateway.marvel.com:443/v1/public/"
     }
 
-    enum Paths: String {
-        case characters = "characters"
+    enum Paths: GenericValueProtocol {
+
+        typealias Value = String
+        
+        var value: String {
+            switch self {
+            case .characters:
+                return "characters"
+            case .detail(let characterId):
+                return "characters/\(characterId)"
+            }
+        }
+        
+        case characters
+        case detail(Int)
     }
     
 }
