@@ -9,7 +9,7 @@ import UIKit
 
 class CustomImageViewComponent: UIImageView {
     
-    private var imageUrlString: String?
+    var imageUrlString: String?
     
     func setData(componentData: CustomImageViewComponentData) {
         DispatchQueue.main.async { [weak self] in

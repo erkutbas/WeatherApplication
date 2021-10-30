@@ -21,6 +21,7 @@ class ItemCollectionView: GenericBaseView<ItemCollectionViewData> {
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.delegate = self
         temp.dataSource = self
+        
         temp.register(ItemCollectionCellView.self, forCellWithReuseIdentifier: ItemCollectionCellView.identifier)
         temp.register(LoadingCellView.self, forCellWithReuseIdentifier: LoadingCellView.identifier)
         return temp

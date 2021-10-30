@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rvh-Wp-mgp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Character List View Controller-->
+        <!--Character List-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="CharacterListViewController" customModule="WeatherApplication" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="jA2-4K-XKz" customClass="CharacterItemCollectionViewCell" customModule="WeatherApplication" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="jA2-4K-XKz" customClass="CharacterItemCollectionViewCell" customModule="WeatherApplication" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="174" height="321"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FbE-dY-dRC">
@@ -94,18 +94,18 @@
                             <constraint firstAttribute="bottom" secondItem="49Z-zW-aB0" secondAttribute="bottom" id="j7v-gc-OmY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Character List" id="V9Z-2t-Ya7"/>
                     <connections>
                         <outlet property="characterListCollectionView" destination="49Z-zW-aB0" id="ZrO-WX-eR8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4.3478260869565224" y="123.88392857142857"/>
+            <point key="canvasLocation" x="905.79710144927549" y="123.88392857142857"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mPY-oQ-V0o">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e0s-Qe-WKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="3xy-GP-9jw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GSD-F8-NB2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -114,8 +114,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0s-Qe-WKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="124"/>
+            <point key="canvasLocation" x="2326.0869565217395" y="123.88392857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yit-5D-0qT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rvh-Wp-mgp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zl-RC-OGg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="uCZ-ta-bcR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V84-2M-dTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="123.88392857142857"/>
         </scene>
     </scenes>
     <resources>
