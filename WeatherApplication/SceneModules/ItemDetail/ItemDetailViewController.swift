@@ -33,6 +33,7 @@ class ItemDetailViewController: BaseViewController<ItemDetailViewModel> {
         
             mainComponent.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
             mainComponent.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            
         ])
     }
     

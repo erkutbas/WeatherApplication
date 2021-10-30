@@ -10,6 +10,10 @@ import DefaultNetworkOperationPackage
 
 class MainViewModel {
     
+    deinit {
+        print("DEINIT MainViewModel")
+    }
+    
     private var loginStateListener: BooleanBlock?
     private var mainViewState: ((ViewState) -> Void)?
     private var detailViewState: ItemDetailRequestBlock?

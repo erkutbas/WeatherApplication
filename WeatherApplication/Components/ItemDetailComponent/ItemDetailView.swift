@@ -22,7 +22,7 @@ class ItemDetailView: GenericBaseView<ItemDetailViewData> {
         let temp = UIStackView(arrangedSubviews: [imageContainer, infoView])
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.isUserInteractionEnabled = true
-        temp.alignment = .fill
+        temp.alignment = .center
         temp.distribution = .fill
         temp.axis = .vertical
         temp.spacing = 20
@@ -58,9 +58,11 @@ class ItemDetailView: GenericBaseView<ItemDetailViewData> {
         
             containerView.topAnchor.constraint(equalTo: topAnchor),
             containerView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            
+//            containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            containerView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 60),
+            containerView.centerXAnchor.constraint(equalTo: centerXAnchor),
+
             mainStackView.topAnchor.constraint(equalTo: containerView.topAnchor),
             mainStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
             mainStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
