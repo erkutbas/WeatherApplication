@@ -13,11 +13,24 @@ typealias Paths = EndpointHelper.Paths
 enum EndpointHelper {
 
     enum BaseUrls: String {
-        case dev = "https://picsum.photos/v2/"
+        case dev = "https://gateway.marvel.com:443/v1/public/"
     }
 
-    enum Paths: String {
-        case list = "list"
+    enum Paths: GenericValueProtocol {
+
+        typealias Value = String
+        
+        var value: String {
+            switch self {
+            case .characters:
+                return "characters"
+            case .detail(let characterId):
+                return "characters/\(characterId)"
+            }
+        }
+        
+        case characters
+        case detail(Int)
     }
     
 }

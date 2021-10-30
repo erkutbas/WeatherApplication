@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum ActionButtonTheme: GenericValueProtocol {
+enum AppTheme: GenericValueProtocol {
     typealias Value = UIColor
     
     var value: UIColor {
