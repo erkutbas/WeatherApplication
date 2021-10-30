@@ -77,3 +77,29 @@ fileprivate extension Selector {
     
     static let catchTextFieldChanges = #selector(SugarTextFieldView.catchTextFieldChanges)
 }
+
+/*
+ 
+ private var searchWorkItem: DispatchWorkItem?
+ 
+ @objc func catchTextFieldChanges(_ sender: UITextField) {
+     guard let text = sender.text, text.count > 0 else { return }
+     
+     searchWorkItem?.cancel()
+     
+     let newTask = DispatchWorkItem { [weak self] in
+         self?.callApiSearchResult(with: text)
+     }
+     
+     self.searchWorkItem = newTask
+     
+     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: newTask)
+     
+     returnData()?.sugarTextChangeListener?(sender.text)
+ }
+ 
+ func callApiSearchResult(with value: String) {
+     // call api
+ }
+ 
+ */
