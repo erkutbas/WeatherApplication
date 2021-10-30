@@ -18,14 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        self.window = UIWindow()
-        let mainView = SplashViewBuilder.build {
-            print("splash finalize")
-            self.initializeMainView()
-        }
-        
-        window?.rootViewController = mainView
-        window?.makeKeyAndVisible()
+//        self.window = UIWindow()
+//        let mainView = SplashViewBuilder.build {
+//            print("splash finalize")
+//            self.initializeMainView()
+//        }
+//        
+//        window?.rootViewController = mainView
+//        window?.makeKeyAndVisible()
         
         return true
     }

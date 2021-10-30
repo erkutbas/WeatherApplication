@@ -94,6 +94,11 @@
 		A7D2D21D271AF6F90020A129 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D21C271AF6F90020A129 /* LoginViewModel.swift */; };
 		A7D2D21F271AF6FF0020A129 /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D21E271AF6FF0020A129 /* LoginViewBuilder.swift */; };
 		A7D2D221271AF8BA0020A129 /* SimpleAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D2D220271AF8BA0020A129 /* SimpleAuthenticationRequest.swift */; };
+		A7DC30DC2723F1FA00C441F9 /* ItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC30DB2723F1FA00C441F9 /* ItemCollectionView.swift */; };
+		A7DC30DE2723F22800C441F9 /* ItemCollectionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC30DD2723F22800C441F9 /* ItemCollectionViewData.swift */; };
+		A7E8283B272D36580082EF25 /* CharacterList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E8283A272D36580082EF25 /* CharacterList.storyboard */; };
+		A7E8283E272D38930082EF25 /* CharacterItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8283D272D38930082EF25 /* CharacterItemCollectionViewCell.swift */; };
+		A7E82840272D38F30082EF25 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8283F272D38F30082EF25 /* CharacterListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +207,11 @@
 		A7D2D21C271AF6F90020A129 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A7D2D21E271AF6FF0020A129 /* LoginViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBuilder.swift; sourceTree = "<group>"; };
 		A7D2D220271AF8BA0020A129 /* SimpleAuthenticationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAuthenticationRequest.swift; sourceTree = "<group>"; };
+		A7DC30DB2723F1FA00C441F9 /* ItemCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionView.swift; sourceTree = "<group>"; };
+		A7DC30DD2723F22800C441F9 /* ItemCollectionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewData.swift; sourceTree = "<group>"; };
+		A7E8283A272D36580082EF25 /* CharacterList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterList.storyboard; sourceTree = "<group>"; };
+		A7E8283D272D38930082EF25 /* CharacterItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7E8283F272D38F30082EF25 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +510,9 @@
 		A7D2D1DA271AE6320020A129 /* SceneModules */ = {
 			isa = PBXGroup;
 			children = (
+				A7E82839272D361B0082EF25 /* InterfaceBuilder */,
+				A7AE36A327256C7F003EC4E1 /* ItemDetail */,
+				A700C44F27253EEB005BA0EA /* LottieAnimation */,
 				A7D2D219271AF6E60020A129 /* Login */,
 				A7D2D20C271AF31D0020A129 /* Account */,
 				A7D2D207271AF3060020A129 /* MainTabBar */,
@@ -604,6 +617,43 @@
 				A7D2D21E271AF6FF0020A129 /* LoginViewBuilder.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A7DC30D92723F1DE00C441F9 /* ItemCollectionComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A7A5F6D92724222E00251EE4 /* CellLoadingComponent */,
+				A7A5F6D027240FEE00251EE4 /* ItemCollectionCellViews */,
+				A7DC30DA2723F1EB00C441F9 /* ItemCollectionView */,
+			);
+			path = ItemCollectionComponents;
+			sourceTree = "<group>";
+		};
+		A7DC30DA2723F1EB00C441F9 /* ItemCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A7DC30DB2723F1FA00C441F9 /* ItemCollectionView.swift */,
+				A7DC30DD2723F22800C441F9 /* ItemCollectionViewData.swift */,
+			);
+			path = ItemCollectionView;
+			sourceTree = "<group>";
+		};
+		A7E82839272D361B0082EF25 /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8283C272D386C0082EF25 /* CharacterList */,
+			);
+			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		A7E8283C272D386C0082EF25 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				A7E8283A272D36580082EF25 /* CharacterList.storyboard */,
+				A7E8283D272D38930082EF25 /* CharacterItemCollectionViewCell.swift */,
+				A7E8283F272D38F30082EF25 /* CharacterListViewController.swift */,
+			);
+			path = CharacterList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -722,6 +772,7 @@
 				A7D2D201271AEC440020A129 /* Roboto-Bold.ttf in Resources */,
 				A7D2D1FF271AEC440020A129 /* LICENSE.txt in Resources */,
 				A7D2D1FC271AEC440020A129 /* Roboto-BoldItalic.ttf in Resources */,
+				A7E8283B272D36580082EF25 /* CharacterList.storyboard in Resources */,
 				A7D2D1F9271AEC440020A129 /* Roboto-Regular.ttf in Resources */,
 				A7D2D1FD271AEC440020A129 /* Roboto-LightItalic.ttf in Resources */,
 				A7D2D1F7271AEC440020A129 /* Roboto-Medium.ttf in Resources */,
@@ -763,6 +814,7 @@
 				A7D2D1CF271AD0360020A129 /* PageViewImages.swift in Sources */,
 				A7D2D1E4271AE6A40020A129 /* SplashViewModel.swift in Sources */,
 				A7D2D1CC271AD0360020A129 /* BaseView.swift in Sources */,
+				A7E82840272D38F30082EF25 /* CharacterListViewController.swift in Sources */,
 				A767B16A271AB45D00FE2985 /* AppDelegate.swift in Sources */,
 				A74A7D52271C087800947CC2 /* ItemListProtocol.swift in Sources */,
 				A7D2D21B271AF6F30020A129 /* LoginViewController.swift in Sources */,
@@ -784,6 +836,8 @@
 				A7D2D211271AF31D0020A129 /* AccountViewModel.swift in Sources */,
 				A7ADEB87271F388200C0D726 /* TextFieldView.swift in Sources */,
 				A74A7D4D271C087800947CC2 /* LabelDistributionData.swift in Sources */,
+				A7E8283E272D38930082EF25 /* CharacterItemCollectionViewCell.swift in Sources */,
+				A700C45D272543B5005BA0EA /* LottieManager.swift in Sources */,
 				A7D2D221271AF8BA0020A129 /* SimpleAuthenticationRequest.swift in Sources */,
 				A7D2D1E0271AE6520020A129 /* MainViewController.swift in Sources */,
 				A7D2D1CE271AD0360020A129 /* TabBarImages.swift in Sources */,
@@ -1000,6 +1054,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Weather Application";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = CharacterList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1028,6 +1083,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Weather Application";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = CharacterList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
