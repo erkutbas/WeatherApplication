@@ -8,6 +8,6 @@
 import Foundation
 
 enum ActionButtonType {
-    case filled(ActionButtonTheme)
-    case outlined(ActionButtonTheme)
+    case filled(AppTheme)
+    case outlined(AppTheme)
 }

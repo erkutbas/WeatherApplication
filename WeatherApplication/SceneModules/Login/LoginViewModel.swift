@@ -12,13 +12,19 @@ class LoginViewModel {
     private var loginViewBlock: BooleanBlock?
     
     private let authenticationManager: AuthenticationManagerProtocol
-    
-    init(authenticationManager: AuthenticationManagerProtocol) {
+    private let formatter: LoginViewFormatterProtocol
+    private var email: String?
+    private var password: String?
+
+    init(authenticationManager: AuthenticationManagerProtocol,
+         formatter: LoginViewFormatterProtocol) {
         self.authenticationManager = authenticationManager
+        self.formatter = formatter
     }
     
     func getLoginViewData() -> LoginAuthenticationViewData {
-        return LoginAuthenticationViewData(actionButtonData: ActionButtonData(text: "Login", buttonType: .filled(.sugarLevelColor)).setActionButtonListener(by: loginActionButtonListener),signOutButton: ActionButtonData(text: "Sign out", buttonType: .filled(.bright)).setActionButtonListener(by: signOutActionButtonListener), emailLoginViewData: EmailLoginViewData(email: TextFieldViewData(placeHolder: "Email"), password: TextFieldViewData(placeHolder: "Password")))
+        return formatter.getLoginViewData(loginActionButtonCompletion: loginActionButtonListener, emailChangeCompletion: emailChangeListener, passwordChangeCompletion: passwordChangeListener)
+        
     }
     
     func listenLoginAction(with completion: @escaping BooleanBlock) {
@@ -27,7 +33,8 @@ class LoginViewModel {
     
     // MARK: - Private Methods
     private func fireSignIn() {
-        authenticationManager.signIn(with: SimpleAuthenticationRequest(email: "takasi@gmail.com", password: "123456"))
+        guard let email = email, let password = password else { return }
+        authenticationManager.signIn(with: SimpleAuthenticationRequest(email: email, password: password))
         loginViewBlock?(true)
     }
     
@@ -38,6 +45,16 @@ class LoginViewModel {
     private lazy var loginActionButtonListener: VoidBlock = { [weak self] in
         print("button tapped")
         self?.fireSignIn()
+    }
+    
+    private lazy var emailChangeListener: SugarTextChangeBlock = { [weak self] text in
+        print("email : \(text)")
+        self?.email = text
+    }
+    
+    private lazy var passwordChangeListener: SugarTextChangeBlock = { [weak self] text in
+        print("password : \(text)")
+        self?.password = text
     }
     
     private lazy var signOutActionButtonListener: VoidBlock = { [weak self] in

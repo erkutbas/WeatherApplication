@@ -9,6 +9,6 @@ import Foundation
 
 public protocol GenericDataProtocol {
     
-    var type: GenericRowType { get }
+    var type: GenericRowType? { get }
     
 }

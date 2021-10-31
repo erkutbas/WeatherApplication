@@ -50,14 +50,6 @@ class LoginAuthenticationView: GenericBaseView<LoginAuthenticationViewData> {
         return temp
     }()
     
-    private lazy var signOutButton: ActionButton = {
-        let temp = ActionButton()
-        temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        temp.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 60).isActive = true
-        return temp
-    }()
-    
     override func addMajorViewComponents() {
         super.addMajorViewComponents()
         addContainers()
@@ -89,7 +81,6 @@ class LoginAuthenticationView: GenericBaseView<LoginAuthenticationViewData> {
         super.loadDataView()
         guard let data = returnData() else { return }
         loginButton.setData(by: data.actionButtonData)
-        signOutButton.setData(by: data.signOutButton)
         emailLoginView.setData(by: data.emailLoginViewData)
         mainStackView.setCustomSpacing(20, after: emailLoginView)
         mainStackView.setCustomSpacing(30, after: infoTitle)
