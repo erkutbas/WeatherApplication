@@ -33,7 +33,7 @@ class ContentDisplayerView: GenericBaseView<GenericDataProtocol> {
         let temp = UIStackView(arrangedSubviews: [imageContainer, infoView])
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.isUserInteractionEnabled = true
-        temp.alignment = .center
+        temp.alignment = .fill
         temp.distribution = .fill
         temp.axis = .vertical
         temp.spacing = 5

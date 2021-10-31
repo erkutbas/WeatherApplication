@@ -46,3 +46,44 @@ class Sample: UIView {
     
 }
 
+class XData: Equatable {
+    
+    let name: String
+    let surName: String
+    
+    init(name: String, surName: String) {
+        self.name = name
+        self.surName = surName
+    }
+    
+    static func == (lhs: XData, rhs: XData) -> Bool {
+        return lhs.name == rhs.name &&
+        lhs.surName == rhs.surName
+    }
+    
+    
+}
+
+class Test {
+    
+    func toDo() {
+        
+        let x = 5
+        let y = 10
+        
+        if x == y {
+            
+        }
+        
+        let a = XData(name: "Erkut", surName: "Bas")
+        let c = XData(name: "Erkut", surName: "Bas")
+        let b = XData(name: "Dogukaan", surName: "Kilicarslan")
+        
+        if a == c {
+            
+        }
+        
+        
+    }
+    
+}

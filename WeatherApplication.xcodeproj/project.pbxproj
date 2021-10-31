@@ -18,6 +18,7 @@
 		A700D8F1271AFDB60055178A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A700D8F0271AFDB60055178A /* FirebaseAuth */; };
 		A73AB9B9272E86C7000D5C28 /* HomeOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AB9B8272E86C7000D5C28 /* HomeOperationManager.swift */; };
 		A73AB9BB272E86DC000D5C28 /* HomeOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AB9BA272E86DC000D5C28 /* HomeOperationProtocol.swift */; };
+		A73AB9BF272EB335000D5C28 /* HomeViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AB9BE272EB335000D5C28 /* HomeViewTest.swift */; };
 		A74A7D33271C050500947CC2 /* SFSymbolsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A7D32271C050500947CC2 /* SFSymbolsHelper.swift */; };
 		A74A7D4D271C087800947CC2 /* LabelDistributionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A7D3B271C087800947CC2 /* LabelDistributionData.swift */; };
 		A74A7D4E271C087800947CC2 /* LabelPackComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A7D3C271C087800947CC2 /* LabelPackComponentData.swift */; };
@@ -179,6 +180,7 @@
 		A700C45F272543E4005BA0EA /* AtomicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicValue.swift; sourceTree = "<group>"; };
 		A73AB9B8272E86C7000D5C28 /* HomeOperationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOperationManager.swift; sourceTree = "<group>"; };
 		A73AB9BA272E86DC000D5C28 /* HomeOperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOperationProtocol.swift; sourceTree = "<group>"; };
+		A73AB9BE272EB335000D5C28 /* HomeViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTest.swift; sourceTree = "<group>"; };
 		A74A7D32271C050500947CC2 /* SFSymbolsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsHelper.swift; sourceTree = "<group>"; };
 		A74A7D3B271C087800947CC2 /* LabelDistributionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelDistributionData.swift; sourceTree = "<group>"; };
 		A74A7D3C271C087800947CC2 /* LabelPackComponentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponentData.swift; sourceTree = "<group>"; };
@@ -566,6 +568,7 @@
 			isa = PBXGroup;
 			children = (
 				A767B183271AB45E00FE2985 /* WeatherApplicationTests.swift */,
+				A73AB9BE272EB335000D5C28 /* HomeViewTest.swift */,
 			);
 			path = WeatherApplicationTests;
 			sourceTree = "<group>";
@@ -1244,6 +1247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A767B184271AB45E00FE2985 /* WeatherApplicationTests.swift in Sources */,
+				A73AB9BF272EB335000D5C28 /* HomeViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
