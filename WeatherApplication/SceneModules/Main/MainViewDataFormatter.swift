@@ -46,3 +46,11 @@ class MainViewDataFormatter: MainViewDataFormatterProtocol {
     }
     
 }
+
+extension Thumbnail {
+    
+    func returnImageData() -> String {
+        return "\(self.path)/portrait_incredible.\(self.thumbnailExtension)"
+    }
+    
+}
